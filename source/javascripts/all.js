@@ -25,6 +25,9 @@ $(document).ready(function() {
     }
 
     var label = dymo.label.framework.openLabelXml(labelXML);
+    label.setObjectText("FirstName", "Chris");
+    label.setObjectText("LastName", "White");
+    label.setObjectText("MajorGradDate", "Computer Science");
 
     if (printerName === "") {
       alert('No Printers Available. If you have a printer attached, please try restarting your computer.');
